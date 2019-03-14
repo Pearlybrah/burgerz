@@ -4,7 +4,7 @@ var methodOverride = require("method-override");
 var exphbs = require("express-handlebars");
 
 var app = express();
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "main.html"));
 
 app.use(
   bodyParser.urlencoded({
